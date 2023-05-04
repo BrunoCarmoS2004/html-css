@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Todo tipo de Mídia</h1>
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto grande flexível">
+    </picture>
+    <h2>Audios no site</h2>
+    <p>Agora vamos aprender a reproduzir áudios no seu site</p>
+    <p>Jeito simples</p>
+    <!--SERVE PARA COLOCAR APENAS 1 ARQUIVO!!!-->
+    <audio src="midia/Merry Go - Silent Film Light - Kevin MacLeod.mp3" controls></audio>
+    <p>Jeito mais elaborado</p>
+    <!--SERVE PARA USAR VARIOS FORMATOS DE ARQUIVOS!!!-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/Merry Go - Silent Film Light - Kevin MacLeod.mp3" type="audio/mpeg">
+        
+
+    </audio>
+    <h2>Videos no site simples</h2>
+    <!--SERVE PARA COLOCAR APENAS 1 VIDEO!!!-->
+    <video src="midia/meuvideo.mp4" width="200" controls poster="imagens/foto-m.png"></video>
+    <p>Jeito mais elaborado</p>
+    <!--SERVE PARA USAR VARIOS FORMATOS DE ARQUIVOS!!!-->
+    <video controls width="200" >
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+    </video>
+
+    <h2>Inserindo Videos do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

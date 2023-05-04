@@ -1,0 +1,15 @@
+div > p {
+    display: none;
+}
+div:hover > p{
+    display: block;
+    color: rgb(255, 145, 0);
+    background-color: black;
+    width: 200px;
+}
+
+div:hover{
+    color: yellowgreen;
+    
+    
+}

@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'fonte-titulos';
+    src: url(../Desafio10HTML/fontes/idroid.otf) format(opentype);
+}
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: linear-gradient(#3CD983,   #1A5C38 );
+    width: 100%;
+    height: auto;
+    padding: 15px 0px;
+    
+}
+#h1-header{
+    color: white;
+    font-size: 50px;
+    font-family: 'Oswald';
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    padding: 25px 0px;
+}
+#p-header{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    padding: 35px;
+    margin-bottom:45px;
+}
+
+
+.a-nav{
+
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bolder;
+    margin-left: 10px;
+    transition-duration:.5s;
+    
+    
+}
+
+.a-nav:hover{
+    background-color: #319b61;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #72f1ab;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: block;
+    background-color: white;
+    width: 70%;
+    margin:0% 15%;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+
+h1,h2{
+    font-family: 'fonte-titulos';
+    color: rgb(0, 82, 0);
+    padding: 20px 10px 1px 10px;
+}
+    
+h2{
+    padding-top:1px ;
+    background-position: 9px;
+    background-image: linear-gradient(to right,#5ef5a29a, transparent);
+    width: 77%;
+    padding-bottom: 1px;
+    text-indent: 10px;
+}
+
+.h1-main{
+    margin-left: 10px;
+    font-size: 3em;
+}
+
+.h2-main{
+    font-size: 2em;
+}
+
+.a-main{
+    text-decoration: none;
+    color: #0e301d;
+    font-weight: bolder;
+
+}
+
+.p-main{
+    padding:20px;
+    letter-spacing: 0,5px;
+    text-align: justify;
+    font-weight: normal;
+    font-size: x-large;
+    text-indent: 50px;
+    line-height: 2em;
+}
+
+.img-main-android-velho{
+    width: 90%;
+    padding: 0px 15px 0px 15px;
+    margin: 0% 0% 0% 3%;
+}
+
+.div-mulher{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-main-mulher{
+    width: 95%;
+}
+
+.div-homem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-main-android-cara{
+    width: 40%;
+}
+#div-video{
+    background-color: #0e522e;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.video-main{
+    width: 90%;
+    height: 90%;
+   
+}
+
+.div-aprender-mais{
+    margin: 15px 15px 15px 15px;
+    background-color: rgb(222, 255, 219);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 5px black ;
+}
+
+.h1-lista{
+    padding: 5px 10px 1px 10px;
+    border-radius: 15px 15px 0px 0px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #319b61;
+}
+
+.div-lista{
+    display: flex;
+    columns: 2;
+    
+   
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+
+.a-lista{
+    text-decoration: underline;
+    color: black;
+    margin-left:10px 
+}
+
+.lista1{
+    width: 50%;
+}
+
+.lista2{
+    width: 50%
+  
+}
+
+.a-lista2{
+    text-decoration: underline;
+    color: black;
+   
+}
+
+.a-lista::before{
+    content: ' ✔';
+}
+
+.a-lista:hover{
+    background-color: rgb(162, 241, 151);
+}
+
+.a-lista2::before{
+    content: ' ✔';
+}
+
+.a-lista2:hover{
+    background-color: rgb(162, 241, 151);
+}
+span{
+    color:#0e301d ;
+    font-weight: bolder;
+}
+
+footer{
+    
+    height: 35px;
+    background-color: #005e29;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+@media(max-width:550px){
+
+    h1, h2{
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1pt;
+    }
+
+    h2{
+        background-image: linear-gradient(to bottom,#72f1ab6c, white);
+        width: auto;
+    
+    }
+
+    .div-h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    p{
+        letter-spacing: 0px;
+    }
+
+    .div-lista{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        
+    }
+
+    .lista1{
+
+        margin-bottom: 50px;
+
+    }
+    
+
+    .a-nav{
+       margin-bottom: 10px;
+        
+
+    }
+
+}
