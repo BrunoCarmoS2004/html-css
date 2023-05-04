@@ -1,2 +1,2 @@
 # html-css
- Curso de HTML-CSS
+ Esse é o repositório do GitHub para o Curso de HTML e CSS
