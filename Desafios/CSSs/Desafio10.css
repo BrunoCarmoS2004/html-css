@@ -266,11 +266,20 @@ footer{
 
     }
     
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .a-nav{
        margin-bottom: 10px;
         
 
+    }
+
+    main{
+        width:100vw;
     }
 
 }
