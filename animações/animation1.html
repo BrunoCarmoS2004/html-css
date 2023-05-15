@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <link rel="stylesheet" href="style-index.css">
+
+    <style>
+        
+.item{
+    width: 100px;
+    height: 100px;
+}
+
+.transitionBackgroud{
+    transition: 1s;
+}
+
+.transitionBackgroud:hover{
+    background-color: red;
+}
+
+.transitionSize{
+    transition: transform 1s;
+}
+
+.transitionSize:hover{
+    transform: scale(1.5);
+    background-color: black;
+}
+
+.transitionRotate{
+    transition: transform 0.5s;
+}
+
+.transitionRotate:hover{
+    transform: rotateZ(360deg);
+    /*Rotação pode ser X, Y, */
+}
+
+.transitionDelay{
+    transition: width 1s, height 1s 0.5s;
+}
+
+.transitionDelay:hover{
+    width: 200px;
+    height: 200px;
+}
+
+.trasitionCheckbox{
+    width: 50px;
+    height: 50px;
+    transition: transform 1s;
+}
+
+.trasitionCheckbox:checked{
+    transform: rotateY(360deg);
+
+}
+
+.trasitionRadio{
+    width: 50px;
+    height: 50px;
+    transition: transform 1s;
+}
+
+.trasitionRadio:checked{
+    transform: scale(1.3);
+}
+
+.trasitionText{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    transition: transform 1s;
+}
+
+.trasitionText:focus{
+    transform: scaleY(0.5) scaleX(0.7) rotateZ(90deg);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Transições</h1>
+
+    <h2>Hover</h2>
+        <section>
+            <div class="item blue transitionBackgroud">Azul</div>
+            <div class="item yellow transitionBackgroud">Amarelo</div>
+            <div class="item green transitionSize">Verde</div>
+            <div class="item red transitionRotate">Vermelhor</div>
+        </section>
+
+    <hr>
+
+    <h2>Transition Delay</h2>
+        <section>
+            <div class="item red transitionDelay">Vermelhor</div>
+        </section>
+
+        <hr>
+
+        <h2>Cheked</h2>
+            <section>
+                <input type="checkbox" class="trasitionCheckbox">
+                <input type="radio" name="radio" class="trasitionRadio">
+                <input type="radio" name="radio" class="trasitionRadio">
+            </section>  
+
+            <hr>
+
+            <h2>Focus</h2>
+            <section>
+                <input type="text" class="trasitionText">
+            
+            </section>  
+
+</body>
+</html>
